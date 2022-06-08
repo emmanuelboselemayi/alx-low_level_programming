@@ -1,9 +1,7 @@
 #include "main.h"
-
 /**
- * main - entry 
- * Program prints _putchar
- * Return: Always 0.
+ * main - prints _putchar.
+ * Return: 0 on success.
  */
 int main(void)
 {
@@ -17,3 +15,4 @@ int main(void)
 		_putchar('\n');
 		return (0);
 }
+

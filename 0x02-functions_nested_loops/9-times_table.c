@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- *  * times_table - o to 9 time table
- *   * Description: Prints the times table from 0 to 9
- *    * Return: void
- *     */
+ * times_table - o to 9 time table
+ * Description: Prints the times table from 0 to 9
+ * Return: void
+ */
 void times_table(void)
 {
 		int r;

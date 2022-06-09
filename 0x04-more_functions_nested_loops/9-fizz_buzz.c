@@ -1,26 +1,28 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
-* print_triangle - triangle
-* Description Print a triangle of size `size` using `#` characters
-* @size: the size of the triangle
-* Return: void
-*/
-void print_triangle(int size)
+ * main - 1 to 100
+ * Description: numbers from 1 to 100, replacing multiples of 3
+ * with Fizz, multiples of 5 with Buzz, and multiples of both 3 and
+ * 5 with FizzBuzz.
+ * Return: 0
+ */
+int main(void)
 {
-		int i = 0, x, n = size - 1;
+		int i = 1;
 
-		if (size <= 0)
-			_putchar('\n');
-		else
+		for (; i < 100; i++)
 		{
-			for (; i < size; i++)
-			{
-				for (x = 0; x < size; x++)
-					_putchar(x < n ? ' ' : '#');
-
-				n--;
-																						_putchar('\n');
-																					}
+			if (i % 3 == 0 && i % 5 == 0)
+				printf("FizzBuzz ");
+			else if (i % 3 == 0)
+				printf("Fizz ");
+			else if (i % 5 == 0)
+				printf("Buzz ");
+			else
+				printf("%d ", i);
 		}
+		printf("Buzz\n");
+
+		return (0);
 }

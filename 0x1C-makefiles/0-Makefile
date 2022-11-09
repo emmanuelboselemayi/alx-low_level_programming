@@ -1,0 +1,6 @@
+# -*- MakeFile -*-
+
+all: school
+
+holberton: school.c main.c m.h
+	gcc main.c school.c -o school
